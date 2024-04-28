@@ -6,6 +6,7 @@ const testingController = require('../controllers/testingController')
 
 
 router.post('/users', userController.createUser);
-router.get('/testing', testingController.testMounting)
+router.get('/users', userController.getAllUsers);
+router.get('/testing', testingController.testMounting);
 
 module.exports = router
